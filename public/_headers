@@ -1,0 +1,21 @@
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  X-Frame-Options: DENY
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=()
+  Content-Security-Policy: default-src 'self'; connect-src 'self' https://skdjbifmtleiogbkqwid.supabase.co; img-src 'self' data: https://skdjbifmtleiogbkqwid.supabase.co; style-src 'self'; script-src 'self'; object-src 'none'; base-uri 'none'; frame-ancestors 'none'
+
+/index.html
+  Cache-Control: no-store
+
+/app-1.js
+  Cache-Control: public, max-age=86400
+
+/app-2.js
+  Cache-Control: public, max-age=86400
+
+/app-3.js
+  Cache-Control: public, max-age=86400
+
+/styles.css
+  Cache-Control: public, max-age=86400
