@@ -29,3 +29,5 @@
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
 /* website offer parity */
 .website-highlights{grid-template-columns:repeat(2,minmax(0,1fr));padding-top:0;padding-bottom:20px}.website-highlights li{font-weight:700;color:var(--ink)}.website-highlights li span{color:var(--ink)}.website-offer .offer-panel{border-top:1px solid rgba(36,93,73,.10);background:rgba(244,251,247,.44)}@media(max-width:720px){.website-highlights{grid-template-columns:1fr;padding-bottom:16px}}
+
+.field select{height:52px;padding:0 14px;border-radius:11px;border:1px solid rgba(36,93,73,.22);background:rgba(252,254,253,.82);color:var(--ink);box-shadow:inset 0 1px rgba(255,255,255,.5);font:inherit}.field select:focus{outline:3px solid rgba(36,93,73,.12);border-color:var(--forest)}
