@@ -2,6 +2,12 @@
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "dwd-checkout",
   "compatibility_date": "2026-10-02",
+  "routes": [
+    {
+      "pattern": "opdracht.dewebsitedokters.nl",
+      "custom_domain": true
+    }
+  ],
   "assets": {
     "directory": "./public",
     "not_found_handling": "single-page-application"
