@@ -152,3 +152,10 @@ body{background:#101113;color:#F5F5F0;font-family:"DM Sans",Arial,Helvetica,sans
  .site-footer{margin-top:30px;flex-wrap:wrap;gap:14px}
 }
 @media(prefers-reduced-motion:reduce){.page *{animation:none!important;transition:none!important}}
+
+/* Shared branded header / checkout trust marker */
+.header{display:flex;align-items:center;justify-content:space-between;gap:20px}
+.secure-payment{display:inline-flex;align-items:center;gap:9px;color:rgba(245,245,240,.82);font-size:10px;font-weight:650;line-height:1.3;letter-spacing:.055em;text-transform:uppercase;text-align:right;white-space:nowrap}
+.secure-payment svg{width:17px;height:17px;stroke:#F5F5F0;flex:none}
+@media(max-width:520px){.secure-payment{font-size:9px;gap:5px}.secure-payment svg{width:15px;height:15px}.brand img{max-width:90px}.brand{font-size:9px;letter-spacing:.045em}}
+button,input,select{font-family:inherit}
