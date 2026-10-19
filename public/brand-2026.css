@@ -164,3 +164,56 @@ button,input,select{font-family:inherit}
 .offer-footer{background:#FCFCFB;border-color:rgba(16,17,19,.10)}
 .offer-footer p,.offer-footer a{color:#101113}
 .offer-footer a{text-decoration:underline;text-underline-offset:2px}
+
+/* Responsive QA 2026-10-19: contain all checkout fields at every viewport width. */
+.page,.main,.header,.site-footer,.customer-screen,.customer-screen .form,
+.form-grid,.all-fields-grid,.field,.summary-card,.terms-block,.consent-card,
+.offer,.offer-section,.documents,.document-row,.document-actions,.legal-text{
+  min-width:0;
+  max-width:100%;
+}
+.customer-screen .form{width:100%}
+.all-fields-grid{width:100%;min-width:0}
+.all-fields-grid .field{min-width:0;max-width:100%;overflow-wrap:anywhere}
+.all-fields-grid .field input,.all-fields-grid .field select{
+  display:block;
+  width:100%;
+  max-width:100%;
+  min-width:0;
+  box-sizing:border-box;
+  font-size:16px; /* Prevent iOS Safari auto-zoom on focus. */
+  text-overflow:ellipsis;
+}
+.all-fields-grid .field label{overflow-wrap:anywhere;word-break:normal}
+.terms-block,.consent-card,.document-row,.offer-trigger,.offer-footer{min-width:0}
+.terms-block a,.consent-card span,.document-row h3,.document-row p{overflow-wrap:anywhere}
+.document-page .legal-text{overflow-wrap:anywhere;word-break:normal}
+.document-page .legal-text p{overflow-wrap:anywhere}
+.document-page .document-actions{max-width:100%}
+.document-page .document-actions .btn{max-width:100%;white-space:normal}
+.site-footer{flex-wrap:wrap;line-height:1.5;text-align:center}
+@media(max-width:600px){
+  .all-fields-grid{
+    display:grid;
+    grid-template-columns:minmax(0,1fr);
+    gap:12px;
+  }
+  .all-fields-grid .field-wide{grid-column:1/-1}
+  .customer-screen .form{padding:18px 16px}
+  .customer-screen .field input,.customer-screen .field select{min-height:48px}
+  .customer-screen .field label{font-size:11px}
+  .customer-screen .form-actions .btn{width:100%}
+  .customer-screen .form-actions{gap:10px}
+  .terms-block .document-actions{width:100%;display:grid;grid-template-columns:minmax(0,1fr);gap:8px}
+  .terms-block .document-actions .btn{width:100%}
+  .document-row .document-actions{width:100%;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:8px}
+  .document-row .document-actions .btn{width:100%;padding:0 8px;font-size:12px}
+  .consent-card .consent{display:grid;grid-template-columns:24px minmax(0,1fr);gap:10px}
+  .consent-card .consent input{margin:1px 0 0}
+  .summary-card .price-list>div{grid-template-columns:minmax(0,1fr) auto}
+  .summary-card .price-list dt{max-width:none}
+}
+@media(min-width:601px) and (max-width:850px){
+  .all-fields-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .all-fields-grid .field-wide{grid-column:1/-1}
+}
