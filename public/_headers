@@ -3,7 +3,7 @@
   Referrer-Policy: strict-origin-when-cross-origin
   X-Frame-Options: DENY
   Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=()
-  Content-Security-Policy: default-src 'self'; connect-src 'self' https://skdjbifmtleiogbkqwid.supabase.co; img-src 'self' data: https://skdjbifmtleiogbkqwid.supabase.co; style-src 'self'; script-src 'self'; object-src 'none'; base-uri 'none'; frame-ancestors 'none'
+  Content-Security-Policy: default-src 'self'; connect-src 'self' https://skdjbifmtleiogbkqwid.supabase.co; img-src 'self' data: https://skdjbifmtleiogbkqwid.supabase.co; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; script-src 'self'; object-src 'none'; base-uri 'none'; frame-ancestors 'none'
 
 /index.html
   Cache-Control: no-store
@@ -18,4 +18,9 @@
   Cache-Control: public, max-age=86400
 
 /styles.css
+  Cache-Control: public, max-age=86400
+/brand-2026.css
+  Cache-Control: public, max-age=86400
+
+/dwd-logo-light.svg
   Cache-Control: public, max-age=86400
